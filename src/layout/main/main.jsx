@@ -27,17 +27,17 @@ const menuContent = [
   {
     label: 'Home',
     icon: faHome,
-    link: '/new-portfolio/home',
+    link: '/home',
   },
   {
     label: 'Resume',
     icon: faFile,
-    link: '/new-portfolio/resume',
+    link: '/resume',
   },
   {
     label: 'Projects',
     icon: faDiagramProject,
-    link: '/new-portfolio/projects',
+    link: '/projects',
   },
   //   {
   //     label: 'Contact',
@@ -66,7 +66,7 @@ function MainLayout(props) {
   const location = useLocation();
   const isHome = location.pathname === '/home';
   useEffect(() => {
-    navigate('/new-portfolio/home');
+    navigate('/home');
   },[]);
   useEffect(() => {
     if (!isHome) setVisible(false);

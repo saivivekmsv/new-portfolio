@@ -3,12 +3,12 @@ import { MainLayout, HomeLayout, ProjectLayout, ResumeLayout } from "./layout";
 
 function App() {
   return (
-    <Router basename="/new-portfolio">
+    <Router basename="/">
       <Routes>
-        <Route path="/new-portfolio" element={<MainLayout />}>
-          <Route path="/new-portfolio/home" element={<HomeLayout />} />
-          <Route path="/new-portfolio/resume" element={<ResumeLayout />} />
-          <Route path="/new-portfolio/projects" element={<ProjectLayout />} />
+        <Route path="/" element={<MainLayout />}>
+          <Route path="/home" element={<HomeLayout />} />
+          <Route path="/resume" element={<ResumeLayout />} />
+          <Route path="/projects" element={<ProjectLayout />} />
         </Route>
       </Routes>
     </Router>
