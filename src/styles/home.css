@@ -1,0 +1,31 @@
+.home-layout {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    .home-container {
+
+        .profile-pic {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            justify-content: center;
+        }
+
+        .introduction {
+            margin: 1rem 0;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        .skill-set {
+            text-align: center;
+            margin: 1rem;
+        }
+
+        .about-section {
+            text-align: center;
+        }
+    }
+}

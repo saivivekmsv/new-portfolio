@@ -1,0 +1,11 @@
+.resume-layout {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    .resume-container{
+        .position-property{
+            position: static !important;
+            display: block;
+        }
+    }
+}
