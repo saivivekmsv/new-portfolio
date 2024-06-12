@@ -132,7 +132,7 @@ const skills = [
       },
       {
         label: "Webpack",
-        icon: REACT,
+        icon: WEBPACK,
       },
       {
         label: "ViteJS",
