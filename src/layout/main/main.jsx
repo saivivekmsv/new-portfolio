@@ -6,7 +6,7 @@ import {
   faIdCard,
   faBars,
 } from '@fortawesome/free-solid-svg-icons';
-import { Link as ReactLink, Outlet, useLocation } from 'react-router-dom';
+import { Link as ReactLink, Outlet, useLocation , useNavigate} from 'react-router-dom';
 import {
   Show,
   Image,
@@ -27,17 +27,17 @@ const menuContent = [
   {
     label: 'Home',
     icon: faHome,
-    link: '/home',
+    link: '/new-portfolio/home',
   },
   {
     label: 'Resume',
     icon: faFile,
-    link: '/resume',
+    link: '/new-portfolio/resume',
   },
   {
     label: 'Projects',
     icon: faDiagramProject,
-    link: '/projects',
+    link: '/new-portfolio/projects',
   },
   //   {
   //     label: 'Contact',
@@ -60,9 +60,14 @@ const socialAccounts = [
   },
 ];
 function MainLayout(props) {
+  const navigate = useNavigate();
+    
   const [visible, setVisible] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === '/home';
+  useEffect(() => {
+    navigate('/new-portfolio/home');
+  },[]);
   useEffect(() => {
     if (!isHome) setVisible(false);
   }, [isHome]);
