@@ -22,7 +22,9 @@ import {
 } from '@chakra-ui/react';
 import { MainContext } from '../../context/mainContext';
 import { useContext, useEffect, useState } from 'react';
-
+import LINKEDIN from "../../assets/linkedin.svg";
+import GITHUB from "../../assets/github.svg";
+import MEDIUM from "../../assets/medium.svg";
 const menuContent = [
   {
     label: 'Home',
@@ -47,15 +49,15 @@ const menuContent = [
 ];
 const socialAccounts = [
   {
-    icon: '/src/assets/linkedin.svg',
+    icon: LINKEDIN,
     link: 'https://www.linkedin.com/in/saivivek-msv/',
   },
   {
-    icon: '/src/assets/github.svg',
+    icon: GITHUB,
     link: 'https://github.com/saivivekmsv?tab=repositories',
   },
   {
-    icon: '/src/assets/medium.svg',
+    icon: MEDIUM,
     link: 'https://medium.com/@saivivek.msv',
   },
 ];
