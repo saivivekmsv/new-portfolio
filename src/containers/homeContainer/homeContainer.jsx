@@ -21,42 +21,64 @@ import {
 import { useContext, useEffect } from "react";
 import { MainContext } from "../../context/mainContext";
 import { useIntersectionObserver } from "react-intersection-observer-hook";
+import HTML from "../../assets/html.svg";
+import CSS from "../../assets/css.svg";
+import BootStrap from "../../assets/bootstrap.svg";
+import ChakraUI from "../../assets/chakraui.svg";
+import SASS from "../../assets/sass.svg";
+import JS from "../../assets/javascript.svg";
+import CSHARP from "../../assets/csharp.svg";
+import PYTHON from "../../assets/python.svg";
+import SQL from "../../assets/mysql.svg";
+import MONGO from "../../assets/mongo.png";
+import REDIS from "../../assets/redis.svg";
+import AZURE from "../../assets/azure.svg";
+import FIGMA from "../../assets/figma.svg";
+import GIT from "../../assets/git.svg";
+import LINUX from "../../assets/linux.png";
+import FIREBASE from "../../assets/firebase.svg";
+import NODE from "../../assets/nodejs.svg";
+import REACT from "../../assets/react.svg";
+import WEBPACK from "../../assets/webpack.svg";
+import VITE from "../../assets/vite.svg";
+import VS from "../../assets/visualstudio.svg";
+import VSC from "../../assets/visualstudiocode.svg";
 const skills = [
   {
     category: "Development",
     subCategory: [
       {
         label: "HTML",
-        icon: "/src/assets/html.svg",
+        icon: HTML,
       },
       {
         label: "CSS",
-        icon: "/src/assets/css.svg",
+        icon: CSS,
       },
 
       {
         label: "Bootstrap",
-        icon: "/src/assets/bootstrap.svg",
+        icon: BootStrap,
       },
       {
         label: "ChakraUI",
-        icon: "/src/assets/chakraui.svg",
+        icon: ChakraUI,
       },
       {
         label: "SASS",
-        icon: "/src/assets/sass.svg",
+        icon: SASS,
       },
       {
         label: "JavaScript",
-        icon: "/src/assets/javascript.svg",
+        icon: JS,
       },
       {
         label: "C#",
-        icon: "/src/assets/csharp.svg",
+        icon: CSHARP,
       },
       {
         label: "Python",
-        icon: "/src/assets/python.svg",
+        icon: PYTHON,
       },
     ],
   },
@@ -64,16 +86,16 @@ const skills = [
     category: "DataBase",
     subCategory: [
       {
-        label: "SQL",
-        icon: "/src/assets/mysql.svg",
+        label: "MYSQL",
+        icon: SQL,
       },
       {
         label: "Mongodb",
-        icon: "/src/assets/mongo.png",
+        icon: MONGO,
       },
       {
         label: "Redis",
-        icon: "/src/assets/redis.svg",
+        icon: REDIS,
       },
     ],
   },
@@ -82,47 +104,47 @@ const skills = [
     subCategory: [
       {
         label: "Azure",
-        icon: "/src/assets/azure.svg",
+        icon: AZURE,
       },
       {
         label: "Figma",
-        icon: "/src/assets/figma.svg",
+        icon: FIGMA,
       },
       {
         label: "GIT",
-        icon: "/src/assets/git.svg",
+        icon: GIT,
       },
       {
         label: "LINUX",
-        icon: "/src/assets/linux.png",
+        icon: LINUX,
       },
       {
         label: "Firebase",
-        icon: "/src/assets/firebase.svg",
+        icon: FIREBASE,
       },
       {
         label: "NodeJS",
-        icon: "/src/assets/nodejs.svg",
+        icon: NODE,
       },
       {
         label: "ReactJS",
-        icon: "/src/assets/react.svg",
+        icon: REACT,
       },
       {
         label: "Webpack",
-        icon: "/src/assets/webpack.svg",
+        icon: REACT,
       },
       {
         label: "ViteJS",
-        icon: "/src/assets/vite.svg",
+        icon: VITE,
       },
       {
         label: "Visual Studio",
-        icon: "/src/assets/visualstudio.svg",
+        icon: VS,
       },
       {
         label: "Visual Studio Code",
-        icon: "/src/assets/visualstudiocode.svg",
+        icon: VSC,
       },
     ],
   },
